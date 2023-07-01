@@ -5,7 +5,7 @@ import pandas as pd
 # Create your views here.
 
 def car(make, model):
-    df = pd.read_csv(r'C:\Users\sohan\Desktop\projects\HackByte2Prj\CO2 Emissions_Canada.csv')
+    df = pd.read_csv('static/CO2 Emissions_Canada.csv')
     df.pop('Fuel Consumption Comb (mpg)')
     df.pop('Fuel Consumption Comb (L/100 km)')
     df.pop('Vehicle Class')
