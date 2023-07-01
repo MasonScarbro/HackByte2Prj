@@ -10,6 +10,7 @@
                     <div class="menu-bubble">
                         <a href="{% url 'home' %}" class="menu-item">Home</a>
                         <a href="#about-us" class="menu-item">About Us</a>
+                        <a href="{% url 'home' %}#article" class="menu-item">Article</a>
                         <a href="{% url 'calculate' %}" class="menu-item">Carbon Footprint Calculator</a>
                     </div>
                 </div>
@@ -31,6 +32,60 @@
         </div>
 
         <img src="https://img.freepik.com/premium-photo/nature-green-leaf-garden-summer-natural-green-leaves-plants-using-as-spring-background-cover-page-greenery-environment-ecology-wallpaper_103077-222.jpg" class="background-image">
+        <div id="article"></div>
+        <div class="containerSoap">
+                <img src="https://cdn.discordapp.com/attachments/1123706818070319176/1124791094132080710/co2_emissions_plot.png" width=500 height=500>
+
+            <div class=soapBox>
+                <a href="#home-page">Back to Top</a>
+                <h1>Limiting Carbon Emissions: A Critical Imperative for a Sustainable Future</h1>
+                <p>
+                    As the world grapples with the growing threat of climate change, the urgent need to limit carbon emissions has become a defining challenge of our time. Carbon emissions, primarily driven by human activities such as burning fossil fuels and deforestation, are the leading cause of global warming. The consequences of rising temperatures, from extreme weather events to ecosystem disruptions, demand immediate action. This article explores the importance of limiting carbon emissions and highlights the strategies and technologies that can pave the way toward a sustainable future.
+                
+                    The Climate Crisis and Carbon Emissions:
+                    The Earth's climate system is a delicate balance that has been disrupted by the relentless release of greenhouse gases, particularly carbon dioxide (CO2), into the atmosphere. These emissions trap heat, causing a steady rise in global temperatures. The consequences of this climate crisis are widespread and severe, including the melting of polar ice caps, sea-level rise, and the destruction of ecosystems vital for biodiversity.
+                </p>
+                <p>
+                    The Urgency for Action:
+                    To avert catastrophic consequences, it is essential to limit carbon emissions and strive for a net-zero emissions future. The world must take collective action to reduce greenhouse gas emissions to ensure a stable climate for future generations. Delaying or failing to act decisively will exacerbate the risks and make the necessary mitigation measures more challenging and costly.
+                </p>
+                <h5>
+                    Strategies to Limit Carbon Emissions:
+                </h5>
+                <p>
+                    Transitioning to Renewable Energy:
+                    One of the most impactful ways to reduce carbon emissions is to shift from fossil fuel-dependent energy systems to clean and renewable sources. Investing in wind, solar, hydroelectric, and geothermal energy can significantly decrease carbon footprints while driving innovation and creating new job opportunities.
+                </p>
+                <p>
+                    Energy Efficiency:
+                    Promoting energy efficiency across sectors, including buildings, transportation, and industrial processes, can lead to substantial reductions in carbon emissions. Implementing energy-saving technologies, improving insulation, and adopting sustainable practices can make a significant difference.
+                </p>
+                <p>
+                    Sustainable Transportation:
+                    Transportation is a major contributor to carbon emissions. Encouraging the adoption of electric vehicles, improving public transportation infrastructure, and promoting cycling and walking can help curb emissions from the transportation sector.
+                </p>
+                <p>
+                    Reforestation and Forest Conservation:
+                    Protecting existing forests and undertaking large-scale reforestation efforts are crucial for carbon sequestration. Forests act as carbon sinks, absorbing CO2 and mitigating its impact on the atmosphere. Strengthening forest conservation measures and supporting sustainable land management practices are paramount.
+                </p>
+                <p>
+                    Carbon Capture and Storage (CCS):
+                    Advanced technologies like CCS can capture and store carbon emissions from power plants and industrial processes. By capturing CO2 and preventing it from entering the atmosphere, CCS can help reduce emissions while transitioning to cleaner energy sources.
+                    
+                    International Cooperation and Policy Frameworks:
+                    Addressing the global challenge of carbon emissions requires international cooperation and comprehensive policy frameworks. The Paris Agreement, a landmark international climate accord, aims to limit global temperature rise well below 2 degrees Celsius and strive for 1.5 degrees Celsius. Strong governmental commitment, robust regulations, and financial incentives are necessary to drive the necessary changes and facilitate the transition to a low-carbon economy.
+                </p>
+                <h5>
+                    Conclusion:
+                </h5> 
+                <p>
+                    Limiting carbon emissions is no longer a choice but an imperative for a sustainable future. As individuals, communities, and nations, we must prioritize efforts to reduce our carbon footprints and embrace innovative solutions. By transitioning to clean energy, promoting energy efficiency, protecting forests, and implementing effective policies, we can mitigate climate change's most devastating impacts. The time for action is now, and through collective efforts, we can forge a path towards a safer and healthier planet for future generations.
+                </p>
+                <a href="#home-page">Back to Top</a>
+            </div>
+        </div>
+
+        
     </body>
 </html>
 
@@ -120,5 +175,36 @@
         height: auto; 
         margin-left: 50px; 
         border-radius: 20px;
+    }
+    .containerSoap {
+        height: 100vh; 
+        display: flex; 
+        flex-direction: row; 
+        align-items: start; 
+        justify-content: start;
+        background-color: #ffffff;
+
+    }
+    .soapBox {
+        height: 100; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: start; 
+        justify-content: start;
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+    .soapBox a {
+        color :000000;
+        text-decoration: none;
+        align-items: center; 
+        padding: 10px 20px; 
+        border-radius: 20px; 
+        border: 2px solid black;
+    }
+
+    .soapBox a:hover {
+        transform :scale(1.1);
     }
 </style>
