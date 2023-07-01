@@ -29,6 +29,9 @@ def car(make, model):
 def home(request):
     return render(request, 'home.html')
 
+def calculate(request):
+    return render(request, 'calculate.html')
+
 def result(request):
     num1 = int(request.GET.get('number1')) if request.GET.get('number1') else 0
     num2 = int(request.GET.get('number2')) if request.GET.get('number2') else 0

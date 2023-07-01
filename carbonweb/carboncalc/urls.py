@@ -3,7 +3,8 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('result/', views.result, name='result'),
-    path('result/aboveaverage', views.result, name='aboavg'),
-    path('result/belaverage', views.result, name='belavg')
+    path('calculate/',views.calculate, name='calculate'),
+    path('calculate/result/', views.result, name='result'),
+    path('calculate/result/aboveaverage', views.result, name='aboavg'),
+    path('calculate/result/belaverage', views.result, name='belavg')
 ]

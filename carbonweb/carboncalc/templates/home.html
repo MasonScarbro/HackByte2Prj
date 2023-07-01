@@ -1,35 +1,119 @@
-<div class="center">
-    <h1>Carbon Calculator</h1>
-    
-    <form action="result">
-        <input type="number" name="number1" placeholder="Enter electric bill">
-        <br>
-        <br> 
-        <input type="number" name="number2" placeholder="Enter gas bill">
-        <br>
-        <br> 
-        <input type="number" name="number3" placeholder="Enter oil bill">
-        <br>
-        <br> 
-        <input type="text" name="carmake" placeholder="Enter full car make (Toyota)">
-        <input type="text" name="carmodel" placeholder="Enter full car model (Camry)">
-        <br>
-        <br> 
-        <input type="number" name="number4" placeholder="Enter gas car mileage">
-        <br>
-        <br> 
-        <input type="number" name="number5" placeholder="Enter number of flights">
-        <br>
-        <br>
-        <button type="submit" name="calculate">Add</button>  
-    </form>
-</div>
-    
+<html>
+    <head>
+        <title>My Website</title>
+        <link href="https://fonts.googleapis.com/css?family=Geologica" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+                <a href="put something here pls" class="logo">we put the Logo here </a>
+                <div class="menu">
+                    <div class="menu-bubble">
+                        <a href="{% url 'home' %}" class="menu-item">Home</a>
+                        <a href="#about-us" class="menu-item">About Us</a>
+                        <a href="{% url 'calculate' %}" class="menu-item">Carbon Footprint Calculator</a>
+                    </div>
+                </div>
+        </div>
+
+        <div id="home-page" class="home-page">
+                <h1>Lorem</h1>
+                <p>Ipsum</p>
+        </div>
+
+        <div id="about-us" class="about-us" style="padding-left:50px;padding-right:50px">
+                <div style="width:50%">
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV8UtwpXKeKQco0G802F13OfKJy76SqFTycA3bClL2Ya5Utl08Eu3HG4hry2yuN0INEbs&usqp=CAU%22%3E">
+        </div>
+
+        <img src="https://img.freepik.com/premium-photo/nature-green-leaf-garden-summer-natural-green-leaves-plants-using-as-spring-background-cover-page-greenery-environment-ecology-wallpaper_103077-222.jpg" class="background-image">
+    </body>
+</html>
+
 <style>
-    .center {
-        margin: auto;
-        width: 60%;
-        border: 3px solid #a5addb;
-        padding: 10px;
+    body {
+        font-family: 'Geologica', sans-serif;
+        margin: 0;
+        padding: 0;
+    }      
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .logo {
+        font-size: 24px;
+        text-decoration: none;
+        color: black;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+    .menu-item {
+        margin-left: 20px; 
+        text-decoration: none; 
+        color: black; 
+        transition: all .2s ease-in-out;
+    }
+    .menu-item:hover {
+        transform :scale(1.1);
+    }
+    .menu-bubble {
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        padding: 10px 20px; 
+        border-radius: 20px; 
+        border: 2px solid black;
+    }
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .home-page {
+        height: 100vh; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+    }
+    
+    .home-page h1 {
+        font-size: 50px;
+    }
+    
+    .home-page p {
+        font-size: 30px;
+    }
+    
+    .about-us {
+        height: 100vh; 
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: center;
+    }
+    
+    .about-us h1 {
+        font-size: 50px;
+    }
+
+    .about-us p {
+        font-size: 20px;
+    }
+
+    .about-us img {
+        width: 40%; 
+        height: auto; 
+        margin-left: 50px; 
+        border-radius: 20px;
     }
 </style>
