@@ -31,6 +31,12 @@ The code used to get the specific model
 truedf = df[ (df['Make'] == 'ALFA ROMEO')]
 print(truedf['Model'].unique())
 
+Maybe I could build it so on mouse down the make is the one selected and then, 
+based on what is selected the model dropdown list will be rendered dynamically by looping through the 
+unique list based on the model and building the form dropdown list with the models in that list, notice that 
+the lis created is already in an array, so looping would be really easy, the values in this may have to be converted to a json
+and maybe I could loop through the values in the json. the code is basically already written out above/below.
+
 Unique Values For Make Dropdown List:
 
 'ACURA' 'ALFA ROMEO' 'ASTON MARTIN' 'AUDI' 'BENTLEY' 'BMW' 'BUICK'
