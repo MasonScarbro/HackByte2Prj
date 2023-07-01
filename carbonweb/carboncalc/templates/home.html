@@ -5,7 +5,7 @@
     </head>
     <body>
         <div class="header">
-                <a href="{% url 'home' %}" class="logo"><img src="https://cdn.discordapp.com/attachments/1123706818070319176/1124780852379914451/Green_Seed_Plant_Growing_Sprout_Logo_Design_Template_1.png" width="150" height="150"></a>
+                <a href="{% url 'home' %}" class="logo"><img src="https://cdn.discordapp.com/attachments/1123706818070319176/1124780852379914451/Green_Seed_Plant_Growing_Sprout_Logo_Design_Template_1.png" width="200" height="200"></a>
                 <div class="menu">
                     <div class="menu-bubble">
                         <a href="{% url 'home' %}" class="menu-item">Home</a>
@@ -17,20 +17,21 @@
         </div>
 
         <div id="home-page" class="home-page">
-                <h1>Carbon Counter: What Is It?</h1>
-                <p>Welcome to the Carbon Counter App. This app allows for calculation of your carbon footprint based on easily available information such as utility bills. This app will also provide feedback and tips on how to decrease your carbon footprint based on your results.</p>
-                <h1>Why?</h1>
-                <p>While it may seem that individuals can't do much to prevent global warming, the reality is, even small decreases in an individuals carbon footprint can be greatly beneficial to the overall enviornment. Unfortunately, many people are not aware of their carbon footprint due to most calculators needing complex information that many people don't have readily available. This app changes that and helps people be more aware of their carbon impact.</p>
+                <h1>Lorem</h1>
+                <p>Ipsum</p>
         </div>
 
         <div id="about-us" class="about-us" style="padding-left:50px;padding-right:50px">
                 <div style="width:50%">
                     <h1>About Us</h1>
+                    
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+
+                    
                 </div>
+                
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV8UtwpXKeKQco0G802F13OfKJy76SqFTycA3bClL2Ya5Utl08Eu3HG4hry2yuN0INEbs&usqp=CAU%22%3E">
         </div>
-
         <img src="https://img.freepik.com/premium-photo/nature-green-leaf-garden-summer-natural-green-leaves-plants-using-as-spring-background-cover-page-greenery-environment-ecology-wallpaper_103077-222.jpg" class="background-image">
         <div id="article"></div>
         <div class="containerSoap">
@@ -94,15 +95,19 @@
         font-family: 'Geologica', sans-serif;
         margin: 0;
         padding: 0;
+        background-color: #e8f5e9;
     }      
     .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 5px;
+        padding: 10px;
+    }
+    h5 {
+        font-size: 30px;
     }
     .logo {
-        font-size: 20px;
+        font-size: 24px;
         text-decoration: none;
         color: black;
     }
@@ -136,21 +141,19 @@
         z-index: -1;
     }
     .home-page {
-        height: 150vh; 
+        height: 50vh; 
         display: flex; 
         flex-direction: column; 
+        justify-content: center; 
         align-items: center;
-        text-align: center;
     }
     
     .home-page h1 {
         font-size: 50px;
-        padding-top: 50px;
     }
     
     .home-page p {
         font-size: 30px;
-        padding: 20px;
     }
     
     .about-us {
@@ -161,6 +164,24 @@
         justify-content: center;
         background-color: #e8f5e9;
     }
+    .containerSoap {
+        height: 100vh; 
+        display: flex; 
+        flex-direction: row; 
+        align-items: start; 
+        justify-content: start;
+        background-color: #e8f5e9;
+
+    }
+    .soapBox {
+        height: 100; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: start; 
+        justify-content: start;
+        background-color: #e8f5e9;
+    }
+    
     
     .about-us h1 {
         font-size: 50px;
