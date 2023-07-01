@@ -1,6 +1,15 @@
 from django.shortcuts import render
 import pandas as pd
+from carbonweb.chatbot import ChatResponse
 
+# Create your views here.
+def chat_view(request):
+    if request.method == 'POST':
+        message = request.POST['message']
+        response = ChatResponse.get_response(message)  # Use your chatbot model to get a response
+        return render(request, 'chat.html', {'response': response})
+    else:
+        return render(request, 'chat.html') 
 
 # Create your views here.
 

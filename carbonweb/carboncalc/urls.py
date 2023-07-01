@@ -6,5 +6,6 @@ urlpatterns = [
     path('calculate/',views.calculate, name='calculate'),
     path('calculate/result/', views.result, name='result'),
     path('calculate/result/aboveaverage', views.result, name='aboavg'),
-    path('calculate/result/belaverage', views.result, name='belavg')
+    path('calculate/result/belaverage', views.result, name='belavg'),
+    path('chat/', views.chat_view, name='chat_view')
 ]
