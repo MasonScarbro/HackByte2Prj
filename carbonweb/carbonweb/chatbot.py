@@ -7,16 +7,20 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
 
-
+nltk.download('punkt')
 nltk.download('wordnet')
 lemmatizer = WordNetLemmatizer()
-file_path = os.path.join(os.path.dirname(__file__), 'words.pkl')
+# file_path = os.path.join(os.path.dirname(__file__), 'words.pkl')
+file_path = 'static/words.pkl'
 words = pickle.load(open(file_path, 'rb'))
-file_path2 = os.path.join(os.path.dirname(__file__), 'classes.pkl')
+# file_path2 = os.path.join(os.path.dirname(__file__), 'classes.pkl')
+file_path2 = 'static/classes.pkl'
 classes = pickle.load(open(file_path2, 'rb'))
-file_path3 = os.path.join(os.path.dirname(__file__), 'chatbot_Envo.h5')
+# file_path3 = os.path.join(os.path.dirname(__file__), 'chatbot_Envo.h5')
+file_path3 = 'static/chatbot_Envo.h5'
 model = load_model(file_path3)
-file_path4 = os.path.join(os.path.dirname(__file__), 'intents.json')
+# file_path4 = os.path.join(os.path.dirname(__file__), 'intents.json')
+file_path4 = 'static/intents.json'
 intents = json.loads(open(file_path4).read())
 
 def clean_sentence(sentence):
