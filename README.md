@@ -5,6 +5,6 @@ This is the HackByte II project
 * Chatbot Implementation
 * Cardata and plots
 
------ Sohan -----
+----- Sanju -----
 * Django Setup and Implementation
 * Co2 Emissions Calculator Logic
